@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("fonts/RedHatDisplay-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
