@@ -11,7 +11,8 @@ import {
   QCard,
   QCardSection,
   QCardActions,
-  QDate 
+  QDate,
+  QForm,
 } from "quasar";
 
 Vue.use(Quasar, {
@@ -22,7 +23,8 @@ Vue.use(Quasar, {
     QDate,
     QCard,
     QCardSection,
-    QCardActions
+    QCardActions,
+    QForm
   },
   directives: {
     /* not needed if importStrategy is not 'manual' */
