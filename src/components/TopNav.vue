@@ -30,6 +30,8 @@
             @click="selected = 4"
             :class="{togglered:selected == 4}"
             label="Nadcházející akce"
+            to="/nadchazejici-akce"
+
         />
 
         <q-space />
