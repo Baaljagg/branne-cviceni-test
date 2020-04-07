@@ -23,6 +23,7 @@
             @click="selected = 3"
             :class="{togglered:selected == 3}"
             label="Kalendář akcí"
+            to="/kalendar-akci"
         />
         <q-btn
             flat
