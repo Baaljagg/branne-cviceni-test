@@ -1,5 +1,15 @@
 <template>
   <div class="nadchazejici-akce">
+
+    <h4>
+      nadcházející akce
+    </h4>
+    <KartaUdalostiNadchazejiciAkce />
+
+    <KartaUdalostiNadchazejiciAkce />
+
+    <KartaUdalostiNadchazejiciAkce />
+
     <KartaUdalostiNadchazejiciAkce />
   </div>
 </template>

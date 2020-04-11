@@ -1,7 +1,7 @@
 <template>
   <div class="clenove-tymu">
     <img src="../assets/images/clenove-tymu1.png" >
-    <h5>Členové týmu</h5>
+    <h4>Členové týmu</h4>
     <div class="row justify-between q-px-md q-pb-lg">
       <q-card class="my-card col-6 q-mb-md">
         <img src="../assets/images/tyna1.png" >
