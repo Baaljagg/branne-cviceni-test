@@ -39,7 +39,7 @@
             flat
             @click="selected = 5"
             :class="{togglered:selected == 5}"
-            label="Uživatel"
+            label="Přihlášení"
         />
       </q-toolbar>
     </q-header>

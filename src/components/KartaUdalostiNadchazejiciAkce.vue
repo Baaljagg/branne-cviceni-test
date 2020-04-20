@@ -1,8 +1,8 @@
 <template>
   <div class="karta-udalosti-nadchazejici-akce q-pb-md">
-    <q-card class="my-card row">
-      <q-card-section class="col-2 fitting-content">
-          <div class="text-subtitle2 text-center q-pt-xs">
+    <q-card class="my-card row justify-around">
+      <q-card-section class="col-2 fitting-content text-subtitle2 text-center">
+          
             <div>
               8:00 - 18:00
             </div>
@@ -12,12 +12,12 @@
             <div>
               Praha
             </div>
-          </div>
+         
       </q-card-section>
 
       <q-separator vertical />
 
-      <q-card-section class="col-9">
+      <q-card-section class="col-8">
         <div class="text-subtitle2">
           <h6>
             CQB - Taktika v uzavřených prostorech
@@ -33,12 +33,12 @@
         </div>
       </q-card-section>
 
-      <q-card-actions class="col flex-column q-pa-md justify-between">
-         <div class="text-positive q-pb-md text-center">
+      <q-card-section class="col-2 q-pa-md text-right">
+         <div class="text-positive q-pb-md">
           Volná místa: 10/12
         </div>
         <BtnPrihlasit />
-      </q-card-actions>
+      </q-card-section>
     </q-card>
   </div>
 </template>
