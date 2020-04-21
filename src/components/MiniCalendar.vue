@@ -60,3 +60,8 @@ export default {
   }
 };
 </script>
+
+<style lang="stylus" scoped>
+  .q-date
+    width: fit-content;
+</style>
