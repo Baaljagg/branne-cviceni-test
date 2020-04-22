@@ -6,75 +6,61 @@
     </div>
     <q-separator class="q-mx-md" />
 
-    <div class="q-px-md q-py-sm" style="max-width: 400px">
+    <div class="q-px-md q-pt-sm centering">
       <q-form @submit="onSubmit" class="q-gutter-md">
         <q-input
           autofocus
           outlined
           dense
-          bottom-slots
+          label="Jméno"
           v-model="name"
           lazy-rules
           :rules="[
             val => (val && val.length > 0) || 'Prosím, napište vaše jméno'
           ]"
-        >
-          <template v-slot:before>
-            <div class="q-field text-black">Jméno:</div>
-          </template>
-        </q-input>
+        />
 
         <q-input
           outlined
           dense
-          bottom-slots
+          label="Příjmení"
           v-model="prijmeni"
           lazy-rules
           :rules="[
             val => (val && val.length > 0) || 'Prosím, napište vaše příjmení'
           ]"
-        >
-          <template v-slot:before>
-            <div class="q-field text-black">Přjmení:</div>
-          </template>
-        </q-input>
+        />
 
         <q-input
           class="q-mt-none"
           outlined
           dense
+          label="E-mail"
           type="email"
           v-model="email"
           lazy-rules
           :rules="[
             val => (val && val.length > 0) || 'Prosím, napište váš email'
           ]"
-        >
-          <template v-slot:before>
-            <div class="q-field text-black q-pr-xs">E-mail:</div>
-          </template>
-        </q-input>
+        />
 
         <q-input
           outlined
           dense
-          bottom-slots
+          label="Telefonní číslo"
           type="tel"
           v-model="tel"
           lazy-rules
           :rules="[
-            val => (val && val.length === 9) || 'Prosím, napište telefonní číslo'
+            val =>
+              (val && val.length === 9) || 'Prosím, napište telefonní číslo'
           ]"
-        >
-          <template v-slot:before>
-            <div class="q-field text-black">Telefon:</div>
-          </template>
-        </q-input>
+        />
 
         <q-input
           outlined
           dense
-          bottom-slots
+          label="heslo"
           v-model="password"
           :type="isPwd ? 'password' : 'text'"
         >
@@ -85,16 +71,33 @@
               @click="isPwd = !isPwd"
             />
           </template>
-          <template v-slot:before>
-            <div class="q-field text-black">Heslo</div>
-          </template>
         </q-input>
 
-        <div class="q-ml-xl">
-          <q-btn class="q-ml-xl" label="Submit" type="submit" color="primary" />
+        <div class="centeringBtn q-py-md">
+          <q-btn
+            class="gradientBtnGreen"
+            label="Registrovat"
+            type="submit"
+          />
         </div>
       </q-form>
     </div>
+    <q-separator class="q-mx-md q-mb-sm" />
+     <div class="q-py-lg row justify-center">
+          <q-btn
+            class="gradientBtnBlue"
+            icon="fab fa-facebook-f"
+            label="Login with Facebook"
+          />
+     </div>
+     <div class="q-pb-lg row justify-center" >
+
+          <q-btn
+            class="gradientBtnRed"
+            icon="fab fa-google"
+            label="Login with Google"
+          />
+        </div>
   </q-scroll-area>
 </template>
 
@@ -107,8 +110,8 @@ export default {
       email: null,
       tel: null,
 
-      password: '',
-      isPwd: true,
+      password: "",
+      isPwd: true
     };
   },
 
@@ -137,4 +140,19 @@ i
 
 .q-separator--horizontal
   width: 94%;
+
+.centering
+  margin: 16px auto;
+  max-width: 400px;
+
+.q-header .q-toolbar .q-btn
+    border-radius: 4px;
+    height: auto;
+
+.centeringBtn
+  text-align-last: center;
+
+.q-btn .q-icon, .q-btn .q-spinner {
+    font-size: 1em !important;
+}
 </style>
